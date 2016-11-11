@@ -1,5 +1,9 @@
 module:
+  admin_toolbar: 0
+  admin_toolbar_tools: 0
+  adminimal_admin_toolbar: 0
   block: 0
+  breakpoint: 0
   dblog: 0
   devel: 0
   dynamic_page_cache: 0
@@ -10,6 +14,7 @@ module:
   page_cache: 0
   system: 0
   text: 0
+  toolbar: 0
   update: 0
   user: 0
   minimal: 1000
