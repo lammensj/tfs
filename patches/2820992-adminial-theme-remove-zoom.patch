@@ -1,0 +1,15 @@
+diff --git a/css/adminimal.css b/css/adminimal.css
+index eb877be..17b9954 100644
+--- a/css/adminimal.css
++++ b/css/adminimal.css
+@@ -20,10 +20,6 @@
+   src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNShsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+ }
+ 
+-html {
+-  zoom: 1.1;
+-}
+-
+ /* Fix drag and drop offset in ckeditor toolbar configuration */
+ .adminimal .ckeditor-toolbar-configuration.js-form-wrapper.form-wrapper {
+   zoom: 0.9;
