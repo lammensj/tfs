@@ -1,0 +1,14 @@
+uuid: 3d187357-4d4d-4d5f-8f63-65bd21a4d33d
+name: 'The Fashion Society'
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
