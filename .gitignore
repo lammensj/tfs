@@ -22,7 +22,19 @@ Vagrantfile.local
 examples/prod/inventory
 examples/prod/bootstrap/vars.yml
 scripts/
-drupal/
 
 # Some roles include 'config.yml' files.
 !provisioning/roles/**/config.yml
+
+# Drupal specific files
+htdocs/sites/*/services.local.yml
+htdocs/sites/*/settings.local.php
+htdocs/sites/*/files/*
+htdocs/.htaccess
+htdocs/LICENSE.txt
+htdocs/README.txt
+htdocs/sites/README.txt
+htdocs/themes/README.txt
+htdocs/modules/README.txt
+htdocs/profiles/README.txt
+htdocs/core/*.txt
