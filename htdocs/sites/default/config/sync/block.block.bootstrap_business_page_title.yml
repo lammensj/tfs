@@ -1,0 +1,20 @@
+uuid: ca9a568a-345b-4a8c-a23d-fe97bfe0d1cc
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootstrap_business
+_core:
+  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+id: bootstrap_business_page_title
+theme: bootstrap_business
+region: content
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
