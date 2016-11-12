@@ -1,0 +1,116 @@
+uuid: 5a0685d9-6092-4f51-bee1-3c34ca8674ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.field_page_description
+    - field.field.node.page.field_page_paragraphs
+    - node.type.page
+  module:
+    - field_group
+    - paragraphs
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_page_tabs:
+      children:
+        - group_page_general
+        - group_page_paragraphs
+      parent_name: ''
+      weight: 0
+      label: Tabs
+      format_type: tabs
+      format_settings:
+        label: Tabs
+        direction: horizontal
+        id: ''
+        classes: ''
+    group_page_general:
+      children:
+        - title
+        - field_page_description
+      parent_name: group_page_tabs
+      weight: 105
+      label: General
+      format_type: tab
+      format_settings:
+        label: General
+        formatter: open
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+    group_page_paragraphs:
+      children:
+        - field_page_paragraphs
+      parent_name: group_page_tabs
+      weight: 106
+      label: Paragraphs
+      format_type: tab
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        id: ''
+        required_fields: true
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+  field_page_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_page_paragraphs:
+    type: entity_reference_paragraphs
+    weight: 7
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
