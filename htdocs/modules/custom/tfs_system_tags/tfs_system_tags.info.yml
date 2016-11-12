@@ -1,0 +1,5 @@
+name: TFS System Tags
+type: module
+description: Defines a tag entity which can be used to tag certain system pages like the homepage or the product overview page
+core: 8.x
+package: TFS

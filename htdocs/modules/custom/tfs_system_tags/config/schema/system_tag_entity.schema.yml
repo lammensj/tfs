@@ -1,0 +1,12 @@
+tfs_system_tags.system_tag_entity.*:
+  type: config_entity
+  label: 'System tag config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

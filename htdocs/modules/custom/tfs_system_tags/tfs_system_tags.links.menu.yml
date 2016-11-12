@@ -1,0 +1,8 @@
+# System tag menu items definition
+entity.system_tag_entity.collection:
+  title: 'System tags'
+  route_name: entity.system_tag_entity.collection
+  description: 'List System tag (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

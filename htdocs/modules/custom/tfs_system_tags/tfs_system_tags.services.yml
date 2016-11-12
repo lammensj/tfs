@@ -1,0 +1,19 @@
+services:
+  tfs_system_tags.tag_finder_factory:
+    class: \Drupal\tfs_system_tags\TagFinder\TagFinderFactory
+    tags:
+      - { name: service_collector, tag: tfs_tag_finder, call: addTagFinder }
+
+  tfs_system_tags.node_tag_finder:
+    class: \Drupal\tfs_system_tags\TagFinder\NodeTagFinder
+    arguments:
+      - '@entity.query'
+    tags:
+      - { name: tfs_tag_finder }
+
+  tfs_system_tags.config_overrider:
+    class: \Drupal\tfs_system_tags\Config\FrontPageConfigOverrider
+    arguments:
+      - '@tfs_system_tags.tag_finder_factory'
+    tags:
+      - { name: config.factory.override, priority: 5 }

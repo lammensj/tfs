@@ -1,0 +1,6 @@
+entity.system_tag_entity.add_form:
+  route_name: 'entity.system_tag_entity.add_form'
+  title: 'Add System tag'
+  appears_on:
+    - entity.system_tag_entity.collection
+
