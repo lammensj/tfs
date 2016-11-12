@@ -31,6 +31,7 @@ module:
   page_cache: 0
   paragraphs: 0
   path: 0
+  select_or_other: 0
   syslog: 0
   system: 0
   taxonomy: 0
