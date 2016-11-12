@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.page.field_page_description
     - field.field.node.page.field_page_paragraphs
+    - field.field.node.page.field_system_tags
     - node.type.page
   module:
     - field_group
@@ -30,6 +31,7 @@ third_party_settings:
       children:
         - title
         - field_page_description
+        - field_system_tags
       parent_name: group_page_tabs
       weight: 105
       label: General
@@ -81,6 +83,11 @@ content:
       add_mode: dropdown
       form_display_mode: default
     third_party_settings: {  }
+  field_system_tags:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
   path:
     type: path
     weight: 6

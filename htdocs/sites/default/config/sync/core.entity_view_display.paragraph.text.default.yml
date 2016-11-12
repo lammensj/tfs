@@ -14,7 +14,7 @@ mode: default
 content:
   field_p_text_body:
     weight: 0
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.page.field_page_description
     - field.field.node.page.field_page_paragraphs
+    - field.field.node.page.field_system_tags
     - node.type.page
   module:
     - entity_reference_revisions
@@ -29,6 +30,15 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+  field_system_tags:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   links:
     weight: 100
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

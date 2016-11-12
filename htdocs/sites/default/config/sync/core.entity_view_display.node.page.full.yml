@@ -1,0 +1,51 @@
+uuid: 745894ca-d4e8-4b26-b386-e371b82a026b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.page.field_page_description
+    - field.field.node.page.field_page_paragraphs
+    - field.field.node.page.field_system_tags
+    - node.type.page
+  module:
+    - ds
+    - entity_reference_revisions
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      path: modules/contrib/ds
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_page_paragraphs
+id: node.page.full
+targetEntityType: node
+bundle: page
+mode: full
+content:
+  field_page_paragraphs:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+hidden:
+  field_page_description: true
+  field_system_tags: true
+  links: true
