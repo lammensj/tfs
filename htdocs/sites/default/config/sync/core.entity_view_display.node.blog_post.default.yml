@@ -16,7 +16,7 @@ bundle: blog_post
 mode: default
 content:
   field_bp_category:
-    weight: 103
+    weight: 102
     label: above
     settings:
       link: true
@@ -31,7 +31,7 @@ content:
       link: ''
     third_party_settings: {  }
   field_bp_segment:
-    weight: 102
+    weight: 103
     label: above
     settings:
       link: true

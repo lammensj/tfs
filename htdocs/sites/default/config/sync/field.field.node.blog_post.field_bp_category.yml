@@ -1,4 +1,4 @@
-uuid: b47d8133-d1a8-46bd-9625-e1e61861f9bc
+uuid: 9696c557-f88a-4314-95f4-dfdb6f02a85c
 langcode: en
 status: true
 dependencies:
@@ -23,6 +23,6 @@ settings:
       blog_categories: blog_categories
     sort:
       field: _none
-    auto_create: false
+    auto_create: true
     auto_create_bundle: ''
 field_type: entity_reference

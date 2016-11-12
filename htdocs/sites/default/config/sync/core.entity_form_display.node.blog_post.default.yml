@@ -11,6 +11,7 @@ dependencies:
     - field_group
     - paragraphs
     - path
+    - select_or_other
 third_party_settings:
   field_group:
     group_bp_tags:
@@ -66,10 +67,12 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_bp_category:
-    weight: 2
-    settings: {  }
+    weight: 108
+    settings:
+      select_element_type: select_or_other_select
+      sort_options: ''
     third_party_settings: {  }
-    type: options_select
+    type: select_or_other_reference
   field_bp_paragraphs:
     type: entity_reference_paragraphs
     weight: 7
@@ -81,10 +84,12 @@ content:
       form_display_mode: default
     third_party_settings: {  }
   field_bp_segment:
-    weight: 3
-    settings: {  }
+    weight: 109
+    settings:
+      select_element_type: select_or_other_select
+      sort_options: ''
     third_party_settings: {  }
-    type: options_select
+    type: select_or_other_reference
   path:
     type: path
     weight: 6

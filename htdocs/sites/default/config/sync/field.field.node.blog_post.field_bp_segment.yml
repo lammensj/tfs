@@ -1,4 +1,4 @@
-uuid: 09a9097f-b9ee-4318-b032-96b34e6d5da3
+uuid: 3d235bd6-44b2-429a-bc27-71f42a47099a
 langcode: en
 status: true
 dependencies:
@@ -23,6 +23,6 @@ settings:
       segments: segments
     sort:
       field: _none
-    auto_create: false
-    auto_create_bundle: blog_categories
+    auto_create: true
+    auto_create_bundle: ''
 field_type: entity_reference
