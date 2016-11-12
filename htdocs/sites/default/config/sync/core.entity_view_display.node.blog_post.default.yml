@@ -1,0 +1,42 @@
+uuid: e2b4094f-b254-4656-8939-61d3fbb165a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blog_post.field_bp_category
+    - field.field.node.blog_post.field_bp_paragraphs
+    - field.field.node.blog_post.field_bp_segment
+    - node.type.blog_post
+  module:
+    - entity_reference_revisions
+    - user
+id: node.blog_post.default
+targetEntityType: node
+bundle: blog_post
+mode: default
+content:
+  field_bp_category:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_bp_paragraphs:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_bp_segment:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+hidden: {  }

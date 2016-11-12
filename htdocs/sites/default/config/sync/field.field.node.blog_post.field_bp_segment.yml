@@ -1,0 +1,28 @@
+uuid: 09a9097f-b9ee-4318-b032-96b34e6d5da3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bp_segment
+    - node.type.blog_post
+    - taxonomy.vocabulary.segments
+id: node.blog_post.field_bp_segment
+field_name: field_bp_segment
+entity_type: node
+bundle: blog_post
+label: Segment
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      segments: segments
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: blog_categories
+field_type: entity_reference

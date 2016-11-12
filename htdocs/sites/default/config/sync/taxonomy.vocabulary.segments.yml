@@ -1,0 +1,9 @@
+uuid: 99d6e8ea-8658-4a6e-aea0-927fc404635c
+langcode: en
+status: true
+dependencies: {  }
+name: Segments
+vid: segments
+description: ''
+hierarchy: 0
+weight: 0
