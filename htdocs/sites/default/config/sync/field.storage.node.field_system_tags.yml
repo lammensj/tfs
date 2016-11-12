@@ -1,0 +1,20 @@
+uuid: 6f551cc1-7533-40fb-986d-d21e73523cf5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - tfs_system_tags
+id: node.field_system_tags
+field_name: field_system_tags
+entity_type: node
+type: entity_reference
+settings:
+  target_type: system_tag_entity
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

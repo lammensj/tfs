@@ -1,0 +1,23 @@
+uuid: 150f865b-2068-4aca-8a5a-31a69cbd8cbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_system_tags
+    - node.type.page
+id: node.page.field_system_tags
+field_name: field_system_tags
+entity_type: node
+bundle: page
+label: 'System tags'
+description: 'Add tags if this page or content has a specific meaning throughout the site.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:system_tag_entity'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

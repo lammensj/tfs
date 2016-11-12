@@ -1,0 +1,8 @@
+uuid: 59b1bd87-bd34-45cc-882e-3c45889a713e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sMYlD_x48-JoF0qpBNKcAzkzTv9zQNDFSlttuAp_vyc
+id: homepage
+label: Homepage
