@@ -1,6 +1,6 @@
 disabled: false
-field_template: false
-ft-default: default
+field_template: true
+ft-default: reset
 ft-show-colon: false
 classes:
   region: {  }

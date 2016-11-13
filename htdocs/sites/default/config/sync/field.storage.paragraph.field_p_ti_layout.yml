@@ -1,22 +1,22 @@
-uuid: 55624d8d-15f7-457c-a90f-682b2e4d8b6a
+uuid: 4b91869f-e0d9-474d-8eb9-e38b6443d236
 langcode: en
 status: true
 dependencies:
   module:
     - options
     - paragraphs
-id: paragraph.field_p_layout
-field_name: field_p_layout
+id: paragraph.field_p_ti_layout
+field_name: field_p_ti_layout
 entity_type: paragraph
 type: list_string
 settings:
   allowed_values:
     -
-      value: text_left
-      label: 'Text left'
+      value: text_image
+      label: 'Text - Image'
     -
-      value: text_right
-      label: 'Text right'
+      value: image_text
+      label: 'Image - Text'
   allowed_values_function: ''
 module: options
 locked: false

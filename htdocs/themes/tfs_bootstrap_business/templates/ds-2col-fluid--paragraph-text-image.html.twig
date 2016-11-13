@@ -1,0 +1,44 @@
+{#
+/**
+ * @file
+ * Display Suite fluid 2 column template.
+ *
+ * Available variables:
+ * - outer_wrapper: outer wrapper element
+ * - left_wrapper: wrapper element around left region
+ * - right_wrapper: wrapper element around right region
+ * - attributes: layout attributes
+ * - left_attributes: attributes for left region
+ * - right_attributes: attributes for right region
+ * - left: content of left region
+ * - right: content of right region
+ */
+#}
+
+{# Default order in display suite is left:text and right:images. #}
+{% set text = left %}
+{% set images = right %}
+
+{# If layout class is 'text_image', don't change anything. #}
+{% set layout = field_p_ti_layout['#items'][0].getValue()['value'] %}
+{% if layout == 'image_text' %}
+  {% set left = images %}
+  {% set right = text %}
+{% endif %}
+
+<{{ outer_wrapper }}{{ attributes.addClass(layout, 'row', 'clearfix') }}>
+
+{{ title_suffix.contextual_links }}
+
+  {% if left %}
+    <{{ left_wrapper }}{{ left_attributes.addClass('col-md-6', 'col-sm-6') }}>
+    {{ left }}
+    </{{ left_wrapper }}>
+  {% endif %}
+
+  {% if right %}
+    <{{ left_wrapper }}{{ left_attributes.addClass('col-md-6', 'col-sm-6') }}>
+    {{ right }}
+    </{{ left_wrapper }}>
+  {% endif %}
+</{{ outer_wrapper }}>

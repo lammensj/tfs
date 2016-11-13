@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.text_image.field_p_image
-    - field.field.paragraph.text_image.field_p_layout
     - field.field.paragraph.text_image.field_p_text_1col
+    - field.field.paragraph.text_image.field_p_ti_layout
     - image.style.thumbnail
     - paragraphs.paragraphs_type.text_image
   module:
@@ -26,11 +26,6 @@ content:
       imce:
         enabled: true
     type: image_image
-  field_p_layout:
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
   field_p_text_1col:
     weight: 0
     settings:
@@ -38,6 +33,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+  field_p_ti_layout:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
 hidden:
   created: true
   status: true

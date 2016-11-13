@@ -9,7 +9,7 @@ _core:
 id: tfs_bootstrap_business_local_actions
 theme: tfs_bootstrap_business
 region: content
-weight: -10
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:

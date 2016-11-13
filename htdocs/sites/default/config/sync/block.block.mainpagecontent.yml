@@ -1,0 +1,20 @@
+uuid: 9cbe8866-69cc-471b-ac86-ea0f311f1037
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tfs_bootstrap_business
+id: mainpagecontent
+theme: tfs_bootstrap_business
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
