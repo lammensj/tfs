@@ -20,6 +20,7 @@ module:
   file: 0
   filter: 0
   image: 0
+  imce: 0
   layout_plugin: 0
   link: 0
   linkit: 0
