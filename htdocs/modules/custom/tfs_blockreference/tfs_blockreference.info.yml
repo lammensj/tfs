@@ -1,0 +1,5 @@
+name: TFS Block Reference
+type: module
+description: Defines a block reference field type.
+core: 8.x
+package: TFS
