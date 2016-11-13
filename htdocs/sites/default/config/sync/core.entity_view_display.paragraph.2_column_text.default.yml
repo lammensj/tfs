@@ -1,0 +1,54 @@
+uuid: 0b8794ac-f893-4ee5-aa4c-eeb55ead3faf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.2_column_text.field_p_text_1col
+    - field.field.paragraph.2_column_text.field_p_text_2col
+    - paragraphs.paragraphs_type.2_column_text
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_fluid
+      path: modules/contrib/ds
+      library: layout_plugin/ds_2col_fluid
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_p_text_1col
+      right:
+        - field_p_text_2col
+id: paragraph.2_column_text.default
+targetEntityType: paragraph
+bundle: 2_column_text
+mode: default
+content:
+  field_p_text_1col:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_p_text_2col:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden:
+  created: true
+  uid: true

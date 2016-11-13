@@ -1,0 +1,6 @@
+uuid: 9b33d106-7dd0-403d-8ce3-887d3bc057b1
+langcode: en
+status: true
+dependencies: {  }
+id: 2_column_text
+label: '2 column text'

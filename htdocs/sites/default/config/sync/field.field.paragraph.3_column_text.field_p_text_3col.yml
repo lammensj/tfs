@@ -1,0 +1,21 @@
+uuid: f21c50fe-431b-4616-9dc8-c65c1b3333a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_text_3col
+    - paragraphs.paragraphs_type.3_column_text
+  module:
+    - text
+id: paragraph.3_column_text.field_p_text_3col
+field_name: field_p_text_3col
+entity_type: paragraph
+bundle: 3_column_text
+label: 'Right column'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

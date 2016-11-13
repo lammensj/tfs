@@ -1,12 +1,12 @@
-uuid: 5f4d04e8-2dae-493f-91d1-3b068aaf23ec
+uuid: 7f621540-601c-49f7-977a-ad8518b14e02
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
     - text
-id: paragraph.field_p_text_body
-field_name: field_p_text_body
+id: paragraph.field_p_text_3col
+field_name: field_p_text_3col
 entity_type: paragraph
 type: text_long
 settings: {  }

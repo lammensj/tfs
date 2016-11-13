@@ -23,6 +23,12 @@ settings:
     target_bundles: null
     target_bundles_drag_drop:
       text:
-        weight: 2
+        weight: -7
+        enabled: false
+      2_column_text:
+        weight: -6
+        enabled: false
+      3_column_text:
+        weight: -5
         enabled: false
 field_type: entity_reference_revisions

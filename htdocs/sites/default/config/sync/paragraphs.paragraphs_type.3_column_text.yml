@@ -1,0 +1,6 @@
+uuid: 8c9e38fa-690f-4f20-a591-516d1b469fdc
+langcode: en
+status: true
+dependencies: {  }
+id: 3_column_text
+label: '3 column text'

@@ -1,0 +1,27 @@
+uuid: 55624d8d-15f7-457c-a90f-682b2e4d8b6a
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_p_layout
+field_name: field_p_layout
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: text_left
+      label: 'Text left'
+    -
+      value: text_right
+      label: 'Text right'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

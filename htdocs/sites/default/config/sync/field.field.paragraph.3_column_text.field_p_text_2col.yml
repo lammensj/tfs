@@ -1,0 +1,21 @@
+uuid: e78fefa7-dd1f-4e50-90d9-088552639063
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_text_2col
+    - paragraphs.paragraphs_type.3_column_text
+  module:
+    - text
+id: paragraph.3_column_text.field_p_text_2col
+field_name: field_p_text_2col
+entity_type: paragraph
+bundle: 3_column_text
+label: 'Middle column'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

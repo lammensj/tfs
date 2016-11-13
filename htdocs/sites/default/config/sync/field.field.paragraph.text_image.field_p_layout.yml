@@ -1,0 +1,21 @@
+uuid: 9ab28e93-dd79-486f-9980-b50c574431b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_layout
+    - paragraphs.paragraphs_type.text_image
+  module:
+    - options
+id: paragraph.text_image.field_p_layout
+field_name: field_p_layout
+entity_type: paragraph
+bundle: text_image
+label: Layout
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

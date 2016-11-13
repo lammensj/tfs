@@ -1,19 +1,19 @@
-uuid: cc74cffe-1762-4a91-8f06-260cc3af38c5
+uuid: 8f67114d-d736-4dfe-8cc7-e3ce4a5f68f8
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_p_text_body
+    - field.storage.paragraph.field_p_text_1col
     - paragraphs.paragraphs_type.text
   module:
     - text
-id: paragraph.text.field_p_text_body
-field_name: field_p_text_body
+id: paragraph.text.field_p_text_1col
+field_name: field_p_text_1col
 entity_type: paragraph
 bundle: text
-label: Body
+label: Text
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

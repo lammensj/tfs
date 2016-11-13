@@ -1,0 +1,21 @@
+uuid: 96c63c47-45ac-45cd-8443-1dca79f8f14a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_text_1col
+    - paragraphs.paragraphs_type.2_column_text
+  module:
+    - text
+id: paragraph.2_column_text.field_p_text_1col
+field_name: field_p_text_1col
+entity_type: paragraph
+bundle: 2_column_text
+label: 'Left column'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

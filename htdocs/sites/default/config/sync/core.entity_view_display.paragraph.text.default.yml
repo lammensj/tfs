@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.text.field_p_text_body
+    - field.field.paragraph.text.field_p_text_1col
     - paragraphs.paragraphs_type.text
   module:
     - text
@@ -12,9 +12,9 @@ targetEntityType: paragraph
 bundle: text
 mode: default
 content:
-  field_p_text_body:
+  field_p_text_1col:
     weight: 0
-    label: hidden
+    label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
