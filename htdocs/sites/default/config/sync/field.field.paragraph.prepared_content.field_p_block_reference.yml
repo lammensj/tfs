@@ -1,0 +1,21 @@
+uuid: 052d30d5-ad33-4b94-b35f-aa04859bf534
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_block_reference
+    - paragraphs.paragraphs_type.prepared_content
+  module:
+    - tfs_blockreference
+id: paragraph.prepared_content.field_p_block_reference
+field_name: field_p_block_reference
+entity_type: paragraph
+bundle: prepared_content
+label: 'Block reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: blockreference

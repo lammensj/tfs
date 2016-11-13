@@ -1,0 +1,23 @@
+uuid: 33ebf0de-3d05-43bb-973d-466416952675
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.prepared_content.field_p_block_reference
+    - paragraphs.paragraphs_type.prepared_content
+  module:
+    - tfs_blockreference
+id: paragraph.prepared_content.default
+targetEntityType: paragraph
+bundle: prepared_content
+mode: default
+content:
+  field_p_block_reference:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: blockreference_default
+hidden:
+  created: true
+  uid: true

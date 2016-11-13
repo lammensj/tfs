@@ -1,0 +1,19 @@
+uuid: cc5611cd-7d10-40f0-8f30-5a72b9bc8903
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - tfs_blockreference
+id: paragraph.field_p_block_reference
+field_name: field_p_block_reference
+entity_type: paragraph
+type: blockreference
+settings: {  }
+module: tfs_blockreference
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

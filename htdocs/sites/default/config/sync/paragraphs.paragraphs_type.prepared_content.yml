@@ -1,0 +1,6 @@
+uuid: 16556e93-d394-49b5-9069-1f9adedfa099
+langcode: en
+status: true
+dependencies: {  }
+id: prepared_content
+label: 'Prepared content'
