@@ -10,6 +10,7 @@ dependencies:
     - paragraphs.paragraphs_type.text_image
   module:
     - image
+    - imce
     - text
 id: paragraph.text_image.default
 targetEntityType: paragraph
@@ -19,9 +20,11 @@ content:
   field_p_image:
     weight: 1
     settings:
-      progress_indicator: throbber
       preview_image_style: thumbnail
-    third_party_settings: {  }
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
     type: image_image
   field_p_layout:
     weight: 2

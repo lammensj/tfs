@@ -1,0 +1,30 @@
+uuid: 400993aa-2ffd-4968-9736-b9b0cb8af470
+langcode: en
+status: true
+dependencies:
+  module:
+    - imce
+    - node
+third_party_settings:
+  imce:
+    use: true
+    scheme: public
+id: default
+label: Default
+description: ''
+attributes:
+  target:
+    id: target
+    weight: 0
+    settings:
+      widget_type: simple_checkbox
+matchers:
+  f48737b4-1475-490a-a38c-f437346d531e:
+    uuid: f48737b4-1475-490a-a38c-f437346d531e
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles: {  }
+      group_by_bundle: true
+      include_unpublished: false
