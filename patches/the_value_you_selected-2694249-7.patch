@@ -1,0 +1,13 @@
+diff --git a/src/Plugin/Validation/AllowedValuesConstraintValidator.php b/src/Plugin/Validation/AllowedValuesConstraintValidator.php
+index 0c1bb32..87b1a00 100644
+--- a/src/Plugin/Validation/AllowedValuesConstraintValidator.php
++++ b/src/Plugin/Validation/AllowedValuesConstraintValidator.php
+@@ -57,7 +57,7 @@ class AllowedValuesConstraintValidator extends ChoiceValidator implements Contai
+       $this->validateUsingCoreValidation($value, $constraint);
+     }
+     else {
+-      $constraint->choices = $this->getValidChoices($typed_data);
++      $constraint->choices = array_keys($this->getValidChoices($typed_data));
+       $value = $this->getMainPropertyValue($typed_data);
+ 
+       if (isset($value)) {
