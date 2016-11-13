@@ -1,0 +1,22 @@
+uuid: 15262f2f-9712-40af-91cd-5883a38f3100
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tfs_bootstrap_business
+_core:
+  default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
+id: tfs_bootstrap_business_local_tasks
+theme: tfs_bootstrap_business
+region: content
+weight: -20
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 3be0f259-0c90-40bc-895a-c7ece745e6db
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tfs_bootstrap_business
+_core:
+  default_config_hash: fRKXNB91UxDvEMkzCR8ZBsawfC6Fqbme2gtobei3gu4
+id: tfs_bootstrap_business_branding
+theme: tfs_bootstrap_business
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

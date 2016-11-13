@@ -55,5 +55,6 @@ theme:
   seven: 0
   adminimal_theme: 0
   bootstrap_business: 0
+  tfs_bootstrap_business: 0
 _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU

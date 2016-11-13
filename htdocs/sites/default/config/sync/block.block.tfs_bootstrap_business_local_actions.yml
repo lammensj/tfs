@@ -1,0 +1,20 @@
+uuid: 97052744-63bd-42a6-aeff-2e1473572dfa
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tfs_bootstrap_business
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: tfs_bootstrap_business_local_actions
+theme: tfs_bootstrap_business
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

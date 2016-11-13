@@ -1,0 +1,22 @@
+uuid: 88924787-23eb-44d3-b3ca-07c7445a388a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tfs_bootstrap_business
+_core:
+  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
+id: tfs_bootstrap_business_messages
+theme: tfs_bootstrap_business
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
