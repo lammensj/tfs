@@ -1,0 +1,5 @@
+name: TFS Mailchimp
+type: module
+description: Mailchimp extensions for The Fashion Society
+core: 8.x
+package: TFS
