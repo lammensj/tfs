@@ -1,0 +1,24 @@
+uuid: 67153ed3-e622-40f4-b9d5-a0680f658b3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - tfs_bootstrap_business
+id: footer_main_navigation
+theme: tfs_bootstrap_business
+region: footer_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }
