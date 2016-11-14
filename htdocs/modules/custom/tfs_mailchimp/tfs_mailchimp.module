@@ -1,0 +1,86 @@
+<?php
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\user\Entity\User;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function tfs_mailchimp_form_mailchimp_signup_subscribe_block_signup_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Cache per user
+  $form['#cache']['contexts'][0] = 'user';
+
+  // Move title field to the top
+  $form['mergevars']['TITLE']['#weight'] = 0;
+  $form['mergevars']['EMAIL']['#weight'] = 50;
+
+  // Prefill the form with some default values
+  $user = Drupal::currentUser();
+  if ($user->isAuthenticated()) {
+    $user = User::load($user->id());
+
+    if (!$user->get('field_user_subscribed')->value) {
+      $form['mergevars']['TITLE']['#default_value'] = $user->get('field_user_title')->value;
+      $form['mergevars']['EMAIL']['#default_value'] = $user->getEmail();
+      $form['mergevars']['FNAME']['#default_value'] = $user->get('field_user_first_name')->value;
+      $form['mergevars']['LNAME']['#default_value'] = $user->get('field_user_last_name')->value;
+    }
+    else {
+      $form['#access'] = FALSE;
+    }
+    $form['create_account'] = [
+      '#type' => 'checkbox',
+      '#title' => t('Create account')
+    ];
+  }
+  else {
+    $form['create_account'] = [
+      '#type' => 'checkbox',
+      '#title' => t('Create account')
+    ];
+  }
+
+  $form['#submit'][] = 'tfs_mailchimp_signup_submit';
+}
+
+/**
+ * Custom submit handler for mailchimp signup
+ *
+ * @param $form
+ * @param FormStateInterface $form_state
+ */
+function tfs_mailchimp_signup_submit($form, FormStateInterface $form_state) {
+  $user = Drupal::currentUser();
+  if ($user->isAuthenticated()) {
+    $user = User::load($user->id());
+    $user
+      ->set('field_user_subscribed', 1)
+      ->save();
+  }
+  elseif ($form_state->getValue('create_account')) {
+    $merge_vars = $form_state->getValue('mergevars');
+    $email = $merge_vars['EMAIL'];
+
+    $user = User::create();
+    $user->setPassword('the-fashion-society');
+    $user->enforceIsNew();
+    $user->setEmail($email);
+
+    $user_name = preg_replace('/([^@]*).*/', '$1', $email);
+    $user->setUsername($user_name);
+
+    $user->set('init', $merge_vars['EMAIL']);
+    $user->set('field_user_title', $merge_vars['TITLE']);
+    $user->set('field_user_first_name', $merge_vars['FNAME']);
+    $user->set('field_user_last_name', $merge_vars['LNAME']);
+    $user->set('field_user_subscribed', 1);
+    $user->activate();
+
+    // Save user account
+    $user->save();
+
+    // No email verification required; log in user immediately.
+    _user_mail_notify('register_no_approval_required', $user);
+    user_login_finalize($user);
+    drupal_set_message(t('Registration successful. You are now logged in.'));
+  }
+}
