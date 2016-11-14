@@ -1,0 +1,45 @@
+uuid: 8b0af3be-9174-4285-b83a-a63e1d066447
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_user_first_name
+    - field.field.user.user.field_user_last_name
+    - field.field.user.user.field_user_subscribed
+    - field.field.user.user.field_user_title
+  module:
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+  field_user_first_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_user_last_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_user_title:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+hidden:
+  contact: true
+  field_user_subscribed: true
+  language: true
+  path: true
+  timezone: true
