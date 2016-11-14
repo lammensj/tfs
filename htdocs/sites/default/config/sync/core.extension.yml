@@ -24,6 +24,9 @@ module:
   layout_plugin: 0
   link: 0
   linkit: 0
+  mailchimp: 0
+  mailchimp_lists: 0
+  mailchimp_signup: 0
   menu_link_content: 0
   menu_ui: 0
   metatag: 0
