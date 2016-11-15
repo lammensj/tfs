@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.blog_post.field_bp_category
+    - field.field.node.blog_post.field_bp_description
     - field.field.node.blog_post.field_bp_paragraphs
     - field.field.node.blog_post.field_bp_segment
     - node.type.blog_post
@@ -12,6 +13,7 @@ dependencies:
     - paragraphs
     - path
     - select_or_other
+    - text
 third_party_settings:
   field_group:
     group_bp_tags:
@@ -32,6 +34,7 @@ third_party_settings:
         - title
         - field_bp_category
         - field_bp_segment
+        - field_bp_description
       parent_name: group_bp_tags
       weight: 106
       label: General
@@ -67,12 +70,19 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_bp_category:
-    weight: 108
+    weight: 2
     settings:
       select_element_type: select_or_other_select
       sort_options: ''
     third_party_settings: {  }
     type: select_or_other_reference
+  field_bp_description:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
   field_bp_paragraphs:
     type: entity_reference_paragraphs
     weight: 7
@@ -84,7 +94,7 @@ content:
       form_display_mode: default
     third_party_settings: {  }
   field_bp_segment:
-    weight: 109
+    weight: 3
     settings:
       select_element_type: select_or_other_select
       sort_options: ''

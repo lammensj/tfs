@@ -1,33 +1,30 @@
-uuid: 35ff910f-9484-48cf-902e-b9326677b3de
+uuid: 2f937b09-45b6-4bb0-9d46-4f56c22ca56a
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.full
     - field.field.node.blog_post.field_bp_category
-    - field.field.node.blog_post.field_bp_description
     - field.field.node.blog_post.field_bp_paragraphs
     - field.field.node.blog_post.field_bp_segment
     - node.type.blog_post
   module:
-    - text
+    - entity_reference_revisions
     - user
-id: node.blog_post.teaser
+id: node.blog_post.full
 targetEntityType: node
 bundle: blog_post
-mode: teaser
+mode: full
 content:
-  field_bp_description:
-    type: text_default
+  field_bp_paragraphs:
+    type: entity_reference_revisions_entity_view
     weight: 0
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
-  links:
-    weight: 1
-    settings: {  }
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
 hidden:
   field_bp_category: true
-  field_bp_paragraphs: true
   field_bp_segment: true
+  links: true
