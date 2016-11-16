@@ -4,24 +4,21 @@ status: true
 dependencies:
   config:
     - block_content.type.basic_block
-    - field.field.block_content.basic_block.field_bb_paragraphs
+    - field.field.block_content.basic_block.field_bb_body
   module:
-    - paragraphs
+    - text
 id: block_content.basic_block.default
 targetEntityType: block_content
 bundle: basic_block
 mode: default
 content:
-  field_bb_paragraphs:
-    type: entity_reference_paragraphs
+  field_bb_body:
     weight: 3
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
+    type: text_textarea
   info:
     type: string_textfield
     weight: -5
