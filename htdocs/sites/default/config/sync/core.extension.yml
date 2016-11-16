@@ -47,6 +47,7 @@ module:
   taxonomy: 0
   text: 0
   tfs_blockreference: 0
+  tfs_default_content: 0
   tfs_mailchimp: 0
   tfs_system_tags: 0
   token: 0
