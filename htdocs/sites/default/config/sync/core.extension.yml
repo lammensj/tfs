@@ -11,6 +11,7 @@ module:
   contextual: 0
   ctools: 0
   dblog: 0
+  default_content: 0
   devel: 0
   dynamic_page_cache: 0
   editor: 0
@@ -20,6 +21,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  hal: 0
   image: 0
   imce: 0
   layout_plugin: 0
@@ -37,7 +39,9 @@ module:
   page_cache: 0
   paragraphs: 0
   path: 0
+  rest: 0
   select_or_other: 0
+  serialization: 0
   syslog: 0
   system: 0
   taxonomy: 0
