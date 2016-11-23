@@ -1,0 +1,25 @@
+uuid: 717b9e04-2eef-4111-bd99-f511f63e706c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:612e9ae2-42ad-4a6b-ba93-33690615c3e4'
+  module:
+    - block_content
+  theme:
+    - tfs_bootstrap_business
+id: connectwithus
+theme: tfs_bootstrap_business
+region: header_top_right
+weight: 0
+provider: null
+plugin: 'block_content:612e9ae2-42ad-4a6b-ba93-33690615c3e4'
+settings:
+  id: 'block_content:612e9ae2-42ad-4a6b-ba93-33690615c3e4'
+  label: 'Connect With Us'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * Import block_content 'Connect with us'
+ */
+function tfs_default_content_update_8001() {
+  \Drupal::service('default_content.manager')
+    ->importContent('tfs_default_content');
+}

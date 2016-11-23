@@ -26,5 +26,6 @@ content:
     third_party_settings: {  }
 hidden:
   field_bp_category: true
+  field_bp_description: true
   field_bp_segment: true
   links: true

@@ -1,0 +1,95 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/1?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic_block"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/basic_block\/revision_user": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": "1"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "612e9ae2-42ad-4a6b-ba93-33690615c3e4"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": "1"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "basic_block"
+        }
+    ],
+    "info": [
+        {
+            "value": "Connect With Us",
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": "1479329997",
+            "lang": "en"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "1479329147"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/basic_block\/revision_user": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "c199f09b-70c9-4d32-bf0c-1dd415004dfe"
+                    }
+                ]
+            }
+        ]
+    },
+    "revision_translation_affected": [
+        {
+            "value": "1",
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "en"
+        }
+    ],
+    "field_bb_body": [
+        {
+            "value": "<p><a href=\"http:\/\/www.twitter.com\/thefashionsoc\"><img alt=\"Twitter icon\" src=\"https:\/\/g.twimg.com\/dev\/documentation\/image\/Twitter_logo_blue_32.png\" \/><\/a><a href=\"https:\/\/www.facebook.com\/thefashionsoc\"><img alt=\"Facebook icon\" src=\"http:\/\/fanpagelist.com\/images\/facebook-32x32.png\" \/><\/a><a href=\"https:\/\/www.pinterest.com\/thefashionsoc\"><img alt=\"Pinterest icon\" src=\"https:\/\/s-passets-cache-ak0.pinimg.com\/webapp\/style\/app\/common\/images\/favicon-57a225b2.png\" \/><\/a><a href=\"https:\/\/www.youtube.com\/thefashionsoc\"><img alt=\"Youtube icon\" src=\"https:\/\/loebig.files.wordpress.com\/2013\/10\/youtube2.png\" \/><\/a><a href=\"https:\/\/www.instagram.com\/thefashionsoc\"><img alt=\"Instagram icon\" src=\"http:\/\/cdigs.uwindsor.ca\/omeka\/files\/original\/89b9240b1ea7e2d7ccfcc4c5db4a5dbd.png\" \/><\/a><\/p>\r\n",
+            "format": "full_html"
+        }
+    ]
+}
