@@ -1,0 +1,40 @@
+uuid: d0111134-29dc-413e-a30d-bd0048264995
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_paragraphs
+    - node.type.event
+  module:
+    - entity_reference_revisions
+id: node.event.field_event_paragraphs
+field_name: field_event_paragraphs
+entity_type: node
+bundle: event
+label: Paragraphs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    target_bundles_drag_drop:
+      2_column_text:
+        weight: 6
+        enabled: false
+      3_column_text:
+        weight: 7
+        enabled: false
+      prepared_content:
+        weight: 8
+        enabled: false
+      text:
+        weight: 9
+        enabled: false
+      text_image:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

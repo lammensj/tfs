@@ -1,0 +1,36 @@
+uuid: b3e666c8-6fc7-4552-93f1-b0699e7b1c79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_address
+    - node.type.event
+  module:
+    - address
+id: node.event.field_event_address
+field_name: field_event_address
+entity_type: node
+bundle: event
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries:
+    BE: BE
+  fields:
+    locality: locality
+    postalCode: postalCode
+    addressLine1: addressLine1
+    addressLine2: addressLine2
+    organization: organization
+    administrativeArea: '0'
+    dependentLocality: '0'
+    sortingCode: '0'
+    givenName: '0'
+    additionalName: '0'
+    familyName: '0'
+  langcode_override: ''
+field_type: address
