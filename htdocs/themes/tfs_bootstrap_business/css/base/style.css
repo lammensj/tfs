@@ -20,3 +20,14 @@
     margin: 5px 0 0 0;
     display: inline-block;
 }
+
+/* Blog overview */
+.node--type-blog-post.node--view-mode-teaser {
+    padding: 25px;
+}
+.node--type-blog-post.node--view-mode-teaser > h4 {
+    margin-top: 0;
+}
+.node--type-blog-post.node--view-mode-teaser > .node__links > .links > li {
+    padding: 0;
+}
