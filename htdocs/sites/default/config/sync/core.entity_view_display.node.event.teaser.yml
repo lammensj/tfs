@@ -46,7 +46,7 @@ third_party_settings:
         formatter: default
         settings:
           link: true
-          wrapper: ''
+          wrapper: h4
           class: ''
         ft:
           id: reset

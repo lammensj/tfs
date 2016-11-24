@@ -8,6 +8,8 @@ libraries:
 - bootstrap_business/bootstrap
 - bootstrap_business/global-styling
 - bootstrap_business/toggle
+- bootstrap_business/to-top
+- tfs_bootstrap_business/tfs_bootstrap_business
 
 regions:
     pre_header_first: 'Pre Header First'

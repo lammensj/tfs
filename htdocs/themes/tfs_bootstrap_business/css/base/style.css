@@ -1,0 +1,22 @@
+/* Social media icons */
+.social-icons {
+    margin: 25px 0;
+}
+.social-icons > .social-icon {
+    display: inline-block;
+}
+
+/* Upcoming events */
+.view-display-id-block_events_upcoming .node--type-event.node--view-mode-teaser {
+    padding: 25px;
+}
+.view-display-id-block_events_upcoming .node--type-event.node--view-mode-teaser > h4 {
+    margin-top: 0;
+}
+.view-display-id-block_events_upcoming .node--type-event.node--view-mode-teaser > .address {
+    margin: 0;
+}
+.view-display-id-block_events_upcoming .node--type-event.node--view-mode-teaser > a {
+    margin: 5px 0 0 0;
+    display: inline-block;
+}

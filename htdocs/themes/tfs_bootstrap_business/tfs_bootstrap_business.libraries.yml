@@ -1,0 +1,5 @@
+tfs_bootstrap_business:
+  version: VERSION
+  css:
+    theme:
+      css/base/style.css: {}
