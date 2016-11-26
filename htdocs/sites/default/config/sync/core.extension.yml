@@ -41,7 +41,9 @@ module:
   page_cache: 0
   paragraphs: 0
   path: 0
+  rabbit_hole: 0
   rest: 0
+  rh_node: 0
   select_or_other: 0
   serialization: 0
   syslog: 0
@@ -49,6 +51,7 @@ module:
   taxonomy: 0
   text: 0
   tfs_blockreference: 0
+  tfs_blog: 0
   tfs_default_content: 0
   tfs_mailchimp: 0
   tfs_system_tags: 0
