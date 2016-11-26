@@ -1,0 +1,9 @@
+uuid: aa1966b0-6adf-4dbb-98c1-7ceecb5f248d
+langcode: en
+status: true
+dependencies: {  }
+id: node_type_blog_post
+action: access_denied
+allow_override: 0
+redirect: ''
+redirect_code: 301

@@ -1,0 +1,9 @@
+uuid: 4d625a2e-6c29-40de-847f-3aebb1a7aa9f
+langcode: en
+status: true
+dependencies: {  }
+id: node_type_event
+action: display_page
+allow_override: 0
+redirect: ''
+redirect_code: 301
