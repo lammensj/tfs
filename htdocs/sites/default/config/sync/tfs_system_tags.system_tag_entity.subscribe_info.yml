@@ -1,0 +1,6 @@
+uuid: 8332c2b9-868b-41fb-abde-91b8f27d3854
+langcode: en
+status: true
+dependencies: {  }
+id: subscribe_info
+label: 'Subscribe info'

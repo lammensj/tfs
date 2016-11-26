@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: node_type_blog_post
-action: access_denied
+action: page_redirect_subscribe
 allow_override: 0
 redirect: ''
 redirect_code: 301
