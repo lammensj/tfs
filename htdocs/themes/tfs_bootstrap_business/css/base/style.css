@@ -31,11 +31,21 @@
 .node--type-blog-post.node--view-mode-teaser > h3 {
     margin-top: 0;
 }
-.node--type-blog-post.node--view-mode-teaser > .field-name-node-post-date {
+.node--type-blog-post.node--view-mode-teaser > .meta {
     margin-bottom: 10px;
+}
+.node--type-blog-post.node--view-mode-teaser > .meta > * {
+    display: inline;
+    margin: 0 5px 0 0;
+}
+.node--type-blog-post.node--view-mode-teaser .field-name-node-post-date {
     color: #999999;
-    font-size: 12px;
 }
 .node--type-blog-post.node--view-mode-teaser > .node__links > .links > li {
     padding: 0;
+}
+
+/* forms */
+.button {
+    margin-left: 0;
 }
