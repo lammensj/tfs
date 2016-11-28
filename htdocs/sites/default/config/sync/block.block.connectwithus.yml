@@ -10,8 +10,8 @@ dependencies:
     - tfs_bootstrap_business
 id: connectwithus
 theme: tfs_bootstrap_business
-region: header_top_right
-weight: 0
+region: sidebar_first
+weight: -3
 provider: null
 plugin: 'block_content:612e9ae2-42ad-4a6b-ba93-33690615c3e4'
 settings:

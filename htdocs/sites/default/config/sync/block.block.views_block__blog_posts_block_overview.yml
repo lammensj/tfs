@@ -1,0 +1,24 @@
+uuid: 12baeeb7-5cc5-4dc7-876a-ebf7ea1060c5
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.blog_posts
+  module:
+    - views
+  theme:
+    - tfs_bootstrap_business
+id: views_block__blog_posts_block_overview
+theme: tfs_bootstrap_business
+region: '-1'
+weight: 0
+provider: null
+plugin: 'views_block:blog_posts-block_overview'
+settings:
+  id: 'views_block:blog_posts-block_overview'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }
