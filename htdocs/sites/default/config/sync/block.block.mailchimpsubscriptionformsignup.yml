@@ -8,13 +8,13 @@ dependencies:
     - tfs_bootstrap_business
 id: mailchimpsubscriptionformsignup
 theme: tfs_bootstrap_business
-region: sidebar_second
-weight: 0
+region: sidebar_first
+weight: -5
 provider: null
 plugin: 'mailchimp_signup_subscribe_block:signup'
 settings:
   id: 'mailchimp_signup_subscribe_block:signup'
-  label: 'Mailchimp Subscription Form: Signup'
+  label: 'Subscribe to our newsletter'
   provider: mailchimp_signup
-  label_display: '0'
+  label_display: visible
 visibility: {  }

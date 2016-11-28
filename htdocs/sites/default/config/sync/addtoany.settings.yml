@@ -1,5 +1,5 @@
 buttons_size: 25
-additional_html: "<a class=\"a2a_button_facebook a2a_counter\"></a>\r\n<a class=\"a2a_button_pinterest a2a_counter\"></a>\r\n<a class=\"a2a_button_tumblr a2a_counter\"></a>\r\n<a class=\"a2a_button_twitter a2a_counter\"></a>\r\n<a class=\"a2a_button_instagram a2a_counter\"></a>\r\n"
+additional_html: "<a class=\"a2a_button_facebook a2a_counter\"></a>\r\n<a class=\"a2a_button_pinterest a2a_counter\"></a>\r\n<a class=\"a2a_button_tumblr a2a_counter\"></a>\r\n<a class=\"a2a_button_twitter\"></a>\r\n"
 additional_css: ''
 additional_js: ''
 universal_button: none

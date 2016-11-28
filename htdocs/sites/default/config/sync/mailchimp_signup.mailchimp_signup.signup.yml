@@ -7,7 +7,7 @@ title: Signup
 mc_lists:
   2fa73e81c1: 2fa73e81c1
   6a9402a779: 0
-mode: 1
+mode: 3
 mergefields:
   EMAIL: true
   TITLE: true
@@ -18,7 +18,7 @@ doublein: false
 send_welcome: null
 include_interest_groups: false
 settings:
-  path: ''
+  path: newsletter
   submit_button: Submit
   confirmation_message: 'You have been successfully subscribed.'
   destination: ''
