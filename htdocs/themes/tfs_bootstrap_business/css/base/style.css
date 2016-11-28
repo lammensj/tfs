@@ -25,8 +25,16 @@
 .node--type-blog-post.node--view-mode-teaser {
     padding: 25px;
 }
-.node--type-blog-post.node--view-mode-teaser > h4 {
+.node--type-blog-post.node--view-mode-teaser .image-style-blog-banner {
+    margin: 0 auto 15px;
+}
+.node--type-blog-post.node--view-mode-teaser > h3 {
     margin-top: 0;
+}
+.node--type-blog-post.node--view-mode-teaser > .field-name-node-post-date {
+    margin-bottom: 10px;
+    color: #999999;
+    font-size: 12px;
 }
 .node--type-blog-post.node--view-mode-teaser > .node__links > .links > li {
     padding: 0;

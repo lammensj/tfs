@@ -4,13 +4,16 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.blog_post.field_bp_banner
     - field.field.node.blog_post.field_bp_category
     - field.field.node.blog_post.field_bp_description
     - field.field.node.blog_post.field_bp_paragraphs
     - field.field.node.blog_post.field_bp_segment
+    - image.style.blog_banner
     - node.type.blog_post
   module:
     - ds
+    - image
     - text
     - user
 third_party_settings:
@@ -34,6 +37,7 @@ third_party_settings:
       ds_content:
         - node_title
         - node_post_date
+        - field_bp_banner
         - field_bp_description
         - addtoany
     fields:
@@ -42,6 +46,12 @@ third_party_settings:
         weight: 1
         label: hidden
         formatter: ds_post_date_date_only
+        ft:
+          id: minimal
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
       node_title:
         plugin_id: node_title
         weight: 0
@@ -49,7 +59,7 @@ third_party_settings:
         formatter: default
         settings:
           link: true
-          wrapper: h4
+          wrapper: h3
           class: ''
         ft:
           id: reset
@@ -61,12 +71,25 @@ bundle: blog_post
 mode: teaser
 content:
   addtoany:
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
+  field_bp_banner:
+    type: image
+    weight: 2
+    label: hidden
+    settings:
+      image_style: blog_banner
+      image_link: content
+    third_party_settings:
+      ds:
+        ft:
+          id: reset
+          settings:
+            lb: ''
   field_bp_description:
     type: text_default
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }

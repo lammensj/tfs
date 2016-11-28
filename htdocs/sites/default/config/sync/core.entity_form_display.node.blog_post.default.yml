@@ -3,13 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.blog_post.field_bp_banner
     - field.field.node.blog_post.field_bp_category
     - field.field.node.blog_post.field_bp_description
     - field.field.node.blog_post.field_bp_paragraphs
     - field.field.node.blog_post.field_bp_segment
+    - image.style.thumbnail
     - node.type.blog_post
   module:
     - field_group
+    - image
+    - imce
     - paragraphs
     - path
     - select_or_other
@@ -35,6 +39,7 @@ third_party_settings:
         - field_bp_category
         - field_bp_segment
         - field_bp_description
+        - field_bp_banner
       parent_name: group_bp_tags
       weight: 106
       label: General
@@ -69,6 +74,15 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
+  field_bp_banner:
+    weight: 5
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_image
   field_bp_category:
     weight: 2
     settings:

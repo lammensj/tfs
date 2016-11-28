@@ -1,0 +1,14 @@
+uuid: f69c53a4-320f-4716-b32c-535ac574934f
+langcode: en
+status: true
+dependencies: {  }
+name: blog_banner
+label: 'Blog banner'
+effects:
+  a0fdc8d1-b7e3-4a25-85d8-cac2d8acff61:
+    uuid: a0fdc8d1-b7e3-4a25-85d8-cac2d8acff61
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 750
+      height: 370
