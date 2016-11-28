@@ -7,7 +7,7 @@ title: Signup
 mc_lists:
   2fa73e81c1: 2fa73e81c1
   6a9402a779: 0
-mode: 3
+mode: 1
 mergefields:
   EMAIL: true
   TITLE: true
