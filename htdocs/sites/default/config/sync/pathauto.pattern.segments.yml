@@ -1,0 +1,23 @@
+uuid: d6bc0a6b-56d7-4325-a296-7e08d2da8b96
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: segments
+label: Segments
+type: 'canonical_entities:taxonomy_term'
+pattern: '/segments/[term:name]'
+selection_criteria:
+  246505f6-4a93-4651-a197-1372f4cd52e4:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      segments: segments
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 246505f6-4a93-4651-a197-1372f4cd52e4
+selection_logic: and
+weight: -5
+relationships: {  }
