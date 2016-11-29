@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.node.blog_post.field_bp_banner
     - field.field.node.blog_post.field_bp_category
+    - field.field.node.blog_post.field_bp_comments
     - field.field.node.blog_post.field_bp_description
     - field.field.node.blog_post.field_bp_paragraphs
     - field.field.node.blog_post.field_bp_segment
     - node.type.blog_post
   module:
+    - disqus
     - entity_reference_revisions
     - image
     - text
@@ -34,6 +36,12 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+  field_bp_comments:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: disqus_comment
   field_bp_description:
     weight: 104
     label: above

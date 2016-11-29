@@ -4,11 +4,15 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
+    - field.field.node.blog_post.field_bp_banner
     - field.field.node.blog_post.field_bp_category
+    - field.field.node.blog_post.field_bp_comments
+    - field.field.node.blog_post.field_bp_description
     - field.field.node.blog_post.field_bp_paragraphs
     - field.field.node.blog_post.field_bp_segment
     - node.type.blog_post
   module:
+    - disqus
     - entity_reference_revisions
     - user
 id: node.blog_post.full
@@ -16,6 +20,12 @@ targetEntityType: node
 bundle: blog_post
 mode: full
 content:
+  field_bp_comments:
+    type: disqus_comment
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_bp_paragraphs:
     type: entity_reference_revisions_entity_view
     weight: 0
@@ -25,6 +35,8 @@ content:
       link: ''
     third_party_settings: {  }
 hidden:
+  addtoany: true
+  field_bp_banner: true
   field_bp_category: true
   field_bp_description: true
   field_bp_segment: true

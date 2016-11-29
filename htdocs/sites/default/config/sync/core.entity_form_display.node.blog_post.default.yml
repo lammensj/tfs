@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.node.blog_post.field_bp_banner
     - field.field.node.blog_post.field_bp_category
+    - field.field.node.blog_post.field_bp_comments
     - field.field.node.blog_post.field_bp_description
     - field.field.node.blog_post.field_bp_paragraphs
     - field.field.node.blog_post.field_bp_segment
     - image.style.thumbnail
     - node.type.blog_post
   module:
+    - disqus
     - field_group
     - image
     - imce
@@ -90,6 +92,11 @@ content:
       sort_options: ''
     third_party_settings: {  }
     type: select_or_other_reference
+  field_bp_comments:
+    weight: 108
+    settings: {  }
+    third_party_settings: {  }
+    type: disqus_comment
   field_bp_description:
     weight: 4
     settings:
