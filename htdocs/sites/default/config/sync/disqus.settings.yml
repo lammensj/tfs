@@ -5,14 +5,14 @@ behavior:
   disqus_disable_mobile: false
   disqus_track_newcomment_ga: true
 advanced:
-  disqus_useraccesstoken: ''
-  disqus_publickey: ''
-  disqus_secretkey: ''
+  disqus_useraccesstoken: 4d2e44a6b18e4dd295f13cb2d9df5f3a
+  disqus_publickey: i60feP3W6PPIhpaGpKZTgxVE976fiRiPG9qvoIgLYLmckafDKguvohXJxPkH9EmT
+  disqus_secretkey: PGwsACyszXUsJcxR2JOnXYuMjmzbD4QNI3BYT7mYhTuua08wTE8FoBY9l5KdaASY
   api:
     disqus_api_update: false
     disqus_api_delete: DISQUS_API_NO_ACTION
   sso:
-    disqus_sso: false
+    disqus_sso: true
     disqus_use_site_logo: false
     disqus_logo: ''
 _core:

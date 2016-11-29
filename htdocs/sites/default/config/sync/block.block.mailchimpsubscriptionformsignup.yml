@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - mailchimp_signup
+    - system
   theme:
     - tfs_bootstrap_business
 id: mailchimpsubscriptionformsignup
@@ -17,4 +18,9 @@ settings:
   label: 'Subscribe to our newsletter'
   provider: mailchimp_signup
   label_display: visible
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /user/login
+    negate: true
+    context_mapping: {  }
