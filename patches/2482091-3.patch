@@ -1,0 +1,61 @@
+diff --git a/src/Controller/DisqusController.php b/src/Controller/DisqusController.php
+index d55a33c..6efe6db 100644
+--- a/src/Controller/DisqusController.php
++++ b/src/Controller/DisqusController.php
+@@ -1,5 +1,10 @@
+ <?php
+ 
++/**
++ * @file
++ * Contains \Drupal\disqus\Controller\DisqusController.
++ */
++
+ namespace Drupal\disqus\Controller;
+ 
+ use Drupal\Core\Controller\ControllerBase;
+@@ -17,21 +22,14 @@ class DisqusController extends ControllerBase {
+    *   overlay window.
+    */
+   public function closeWindow() {
+-    return [
+-       // Note: We are using '@' on purpose to not have bad protocol filtering.
+-      '#markup' => $this->t(
+-         'Thank you for logging in. Please close this window, or <a href="@clickhere">click here</a> to continue.',
+-         ['@clickhere' => 'javascript:window.close();']
+-      ),
+-      '#attached' => [
+-        'js' => [
+-           [
+-             'type' => 'inline',
+-             'data' => 'window.close();',
+-           ],
+-        ],
+-      ],
+-    ];
++    $build = array();
++    $build['#markup'] = t('Thank you for logging in. Please close this window, or <a href="!clickhere">click here</a> to continue.',
++      array('!clickhere' => 'javascript:window.close();'));
++    $build['#attached']['html_head'][] = array( array(
++      '#tag' => 'script',
++      '#value' => 'window.close();',
++    ), 'disqus_js');
++    return $build;
+   }
+ 
+ }
+diff --git a/src/DisqusCommentManager.php b/src/DisqusCommentManager.php
+index efb5443..deadaef 100644
+--- a/src/DisqusCommentManager.php
++++ b/src/DisqusCommentManager.php
+@@ -98,9 +98,9 @@ public function ssoSettings() {
+     $disqus['sso'] = [
+       'name' => \Drupal::config('system.site')->get('name'),
+       // The login window must be closed once the user logs in.
+-      'url' => Url::fromRoute('user.login', [], ['query' => ['destination' => 'disqus/closewindow'], 'absolute' => TRUE])->toString(),
++      'url' => Url::fromRoute('user.login', array(), array('query' => array('destination' => Url::fromRoute('disqus.close_window')->toString()), 'absolute' => TRUE))->toString(),
+       // The logout link must redirect back to the original page.
+-      'logout' => Url::fromRoute('user.logout', [], ['query' => ['destination' => Url::fromRoute('<current>')], 'absolute' => TRUE])->toString(),
++      'logout' => Url::fromRoute('user.logout', array(), array('query' => array('destination' => Url::fromRoute('<current>')->toString()), 'absolute' => TRUE))->toString(),
+       'width' => 800,
+       'height' => 600,
+     ];
