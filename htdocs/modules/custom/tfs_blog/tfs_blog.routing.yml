@@ -1,0 +1,7 @@
+tfs_blog.view_count_endpoint:
+  path: '/ajax/node/{nid}/view-count'
+  defaults:
+    _controller: '\Drupal\tfs_blog\Controller\ViewCountController::countAction'
+  requirements:
+    _permission: 'access content'
+    nid: \d+

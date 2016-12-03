@@ -34,7 +34,14 @@ class NodeCount extends DsFieldBase {
         'viewed' => [
           '#type' => 'html_tag',
           '#tag' => 'span',
-          '#value' => $stats['totalcount']
+          '#value' => 0,
+          '#attributes' => [
+            'class' => ['node-stats'],
+            'data-stats-nid' => $this->entity()->id()
+          ],
+          '#attached' => [
+            'library' => ['tfs_blog/node_count'],
+          ]
         ],
         'copy' => [
           '#markup' => $this->formatPlural($stats['totalcount'], 'view', 'views')

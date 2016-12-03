@@ -1,0 +1,7 @@
+node_count:
+  js:
+    assets/js/tfs_blog.node_count.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupal.ajax
