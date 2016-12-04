@@ -9,11 +9,13 @@ dependencies:
     - field.field.node.blog_post.field_bp_description
     - field.field.node.blog_post.field_bp_paragraphs
     - field.field.node.blog_post.field_bp_segment
+    - field.field.node.blog_post.field_bp_show_in
     - node.type.blog_post
   module:
     - disqus
     - entity_reference_revisions
     - image
+    - options
     - text
     - user
 id: node.blog_post.default
@@ -63,6 +65,12 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+  field_bp_show_in:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
   links:
     weight: 100
     settings: {  }

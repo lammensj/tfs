@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.blog_post.field_bp_description
     - field.field.node.blog_post.field_bp_paragraphs
     - field.field.node.blog_post.field_bp_segment
+    - field.field.node.blog_post.field_bp_show_in
     - image.style.thumbnail
     - node.type.blog_post
   module:
@@ -38,6 +39,7 @@ third_party_settings:
     group_bp_general:
       children:
         - title
+        - field_bp_show_in
         - field_bp_category
         - field_bp_segment
         - field_bp_description
@@ -77,7 +79,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_bp_banner:
-    weight: 5
+    weight: 6
     settings:
       preview_image_style: thumbnail
       progress_indicator: throbber
@@ -86,7 +88,7 @@ content:
         enabled: true
     type: image_image
   field_bp_category:
-    weight: 2
+    weight: 3
     settings:
       select_element_type: select_or_other_select
       sort_options: ''
@@ -98,7 +100,7 @@ content:
     third_party_settings: {  }
     type: disqus_comment
   field_bp_description:
-    weight: 4
+    weight: 5
     settings:
       rows: 5
       placeholder: ''
@@ -115,12 +117,17 @@ content:
       form_display_mode: default
     third_party_settings: {  }
   field_bp_segment:
-    weight: 3
+    weight: 4
     settings:
       select_element_type: select_or_other_select
       sort_options: ''
     third_party_settings: {  }
     type: select_or_other_reference
+  field_bp_show_in:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
   path:
     type: path
     weight: 6

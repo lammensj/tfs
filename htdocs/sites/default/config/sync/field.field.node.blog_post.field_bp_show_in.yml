@@ -1,0 +1,23 @@
+uuid: 66c528fb-b106-4b20-9ed1-35c11aa068cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bp_show_in
+    - node.type.blog_post
+  module:
+    - options
+id: node.blog_post.field_bp_show_in
+field_name: field_bp_show_in
+entity_type: node
+bundle: blog_post
+label: 'Show in'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: blog
+default_value_callback: ''
+settings: {  }
+field_type: list_string

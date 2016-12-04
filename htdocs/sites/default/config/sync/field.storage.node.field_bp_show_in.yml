@@ -1,0 +1,27 @@
+uuid: fd03cc8d-7fec-452d-8e01-03874403ce9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_bp_show_in
+field_name: field_bp_show_in
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: blog
+      label: Blog
+    -
+      value: startup_journey
+      label: 'Startup journey'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

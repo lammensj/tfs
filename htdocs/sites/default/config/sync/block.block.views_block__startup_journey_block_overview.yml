@@ -1,0 +1,30 @@
+uuid: a77b90c5-2626-4dba-a706-07248fb66549
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.startup_journey
+  module:
+    - tfs_mailchimp
+    - views
+  theme:
+    - tfs_bootstrap_business
+id: views_block__startup_journey_block_overview
+theme: tfs_bootstrap_business
+region: '-1'
+weight: 0
+provider: null
+plugin: 'views_block:startup_journey-block_overview'
+settings:
+  id: 'views_block:startup_journey-block_overview'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  user_subscribed:
+    id: user_subscribed
+    user_subscribed_activate: '0'
+    negate: null
+    context_mapping: {  }
