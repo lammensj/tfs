@@ -84,20 +84,3 @@ function tfs_mailchimp_signup_submit($form, FormStateInterface $form_state) {
     drupal_set_message(t('Registration successful. You are now logged in.'));
   }
 }
-
-/**
- * Implements hook_block_view_BASE_BLOCK_ID_alter().
- */
-function tfs_blog_block_view_mailchimp_signup_subscribe_block_alter(array &$build, \Drupal\Core\Block\BlockPluginInterface $block) {
-  // Cache per user
-  $form['#cache']['contexts'][0] = 'user';
-
-  $user = Drupal::currentUser();
-  if ($user->isAuthenticated()) {
-    $user = User::load($user->id());
-
-    if ($user->get('field_user_subscribed')->value) {
-      $build = [];
-    }
-  }
-}

@@ -5,6 +5,7 @@ dependencies:
   module:
     - mailchimp_signup
     - system
+    - tfs_mailchimp
   theme:
     - tfs_bootstrap_business
 id: mailchimpsubscriptionformsignup
@@ -23,4 +24,9 @@ visibility:
     id: request_path
     pages: /user/login
     negate: true
+    context_mapping: {  }
+  user_subscribed:
+    id: user_subscribed
+    user_subscribed_activate: '1'
+    negate: null
     context_mapping: {  }
