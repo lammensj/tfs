@@ -1,0 +1,37 @@
+uuid: 073099d8-8dc3-4f8b-be9d-2d0d0623b4f6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:fa88478f-abe6-4b8d-bfc6-cf6183d178a4'
+  module:
+    - block_content
+    - system
+    - tfs_mailchimp
+  theme:
+    - tfs_bootstrap_business
+id: missionvision
+theme: tfs_bootstrap_business
+region: sidebar_second
+weight: -6
+provider: null
+plugin: 'block_content:fa88478f-abe6-4b8d-bfc6-cf6183d178a4'
+settings:
+  id: 'block_content:fa88478f-abe6-4b8d-bfc6-cf6183d178a4'
+  label: 'Mission & vision'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_subscribed:
+    id: user_subscribed
+    user_subscribed_activate: '0'
+    negate: null
+    context_mapping: {  }

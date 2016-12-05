@@ -1,0 +1,37 @@
+uuid: 85ec8871-b516-4103-bb9e-b767da06bc3f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:e1654ced-a0ab-462a-80df-f1400220f0ae'
+  module:
+    - block_content
+    - system
+    - tfs_mailchimp
+  theme:
+    - tfs_bootstrap_business
+id: thefounders
+theme: tfs_bootstrap_business
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'block_content:e1654ced-a0ab-462a-80df-f1400220f0ae'
+settings:
+  id: 'block_content:e1654ced-a0ab-462a-80df-f1400220f0ae'
+  label: 'The founders'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_subscribed:
+    id: user_subscribed
+    user_subscribed_activate: '0'
+    negate: null
+    context_mapping: {  }

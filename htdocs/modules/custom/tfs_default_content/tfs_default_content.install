@@ -7,3 +7,11 @@ function tfs_default_content_update_8001() {
   \Drupal::service('default_content.manager')
     ->importContent('tfs_default_content');
 }
+
+/**
+ * Import block_content 'The founders' and 'Mission and vision'
+ */
+function tfs_default_content_update_8002() {
+  \Drupal::service('default_content.manager')
+    ->importContent('tfs_default_content');
+}

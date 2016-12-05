@@ -1,0 +1,95 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/2?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic_block"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/basic_block\/revision_user": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "id": [
+        {
+            "value": "2"
+        }
+    ],
+    "uuid": [
+        {
+            "value": "fa88478f-abe6-4b8d-bfc6-cf6183d178a4"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": "2"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "basic_block"
+        }
+    ],
+    "info": [
+        {
+            "value": "Mission & vision",
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": "1480957321",
+            "lang": "en"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "1480957321"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/block_content\/basic_block\/revision_user": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "565f7cae-d737-4433-83f4-83a2e6e1dbd0"
+                    }
+                ]
+            }
+        ]
+    },
+    "revision_translation_affected": [
+        {
+            "value": "1",
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "en"
+        }
+    ],
+    "field_bb_body": [
+        {
+            "value": "<p>Our vision<\/p>\r\n",
+            "format": "full_html"
+        }
+    ]
+}
