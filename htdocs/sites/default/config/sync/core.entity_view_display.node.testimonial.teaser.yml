@@ -1,0 +1,22 @@
+uuid: b8e1fe13-8bb2-4a31-b375-9495daa3ce87
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.testimonial.field_testimonial_body
+    - field.field.node.testimonial.field_testimonial_photo
+    - node.type.testimonial
+  module:
+    - user
+id: node.testimonial.teaser
+targetEntityType: node
+bundle: testimonial
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  addtoany: true
+  field_testimonial_body: true
+  field_testimonial_photo: true

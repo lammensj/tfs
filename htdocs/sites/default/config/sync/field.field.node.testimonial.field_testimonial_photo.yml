@@ -1,0 +1,38 @@
+uuid: 94054f7a-836c-4e22-8ce6-39810261d059
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_testimonial_photo
+    - node.type.testimonial
+  module:
+    - image
+id: node.testimonial.field_testimonial_photo
+field_name: field_testimonial_photo
+entity_type: node
+bundle: testimonial
+label: Photo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: images/testimonials
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image
