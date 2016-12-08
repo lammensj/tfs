@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_entity_view_mode_alter().
+ */
+function tfs_blog_entity_view_mode_alter(&$view_mode, Drupal\Core\Entity\EntityInterface $entity, $context) {
+  if ($entity->bundle() == 'blog_post' && $view_mode == 'full') {
+    $user = \Drupal::currentUser();
+    if ($user->isAnonymous()) {
+      $view_mode = 'restricted_full_content';
+    }
+  }
+}

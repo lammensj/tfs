@@ -1,9 +1,9 @@
-uuid: 2f937b09-45b6-4bb0-9d46-4f56c22ca56a
+uuid: bed836da-9959-4b58-a941-966e69b0ec03
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.full
+    - core.entity_view_mode.node.restricted_full_content
     - field.field.node.blog_post.field_bp_banner
     - field.field.node.blog_post.field_bp_category
     - field.field.node.blog_post.field_bp_comments
@@ -13,56 +13,11 @@ dependencies:
     - field.field.node.blog_post.field_bp_show_in
     - node.type.blog_post
   module:
-    - disqus
     - ds
-    - entity_reference_revisions
     - field_group
     - image
     - user
 third_party_settings:
-  ds:
-    layout:
-      id: ds_1col
-      path: modules/contrib/ds
-      library: ''
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        wrappers:
-          ds_content: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        classes:
-          layout_class: {  }
-    regions:
-      ds_content:
-        - group_bp_meta
-        - field_bp_segment
-        - node_post_date
-        - field_bp_banner
-        - node_count
-        - field_bp_paragraphs
-        - addtoany
-        - field_bp_comments
-    fields:
-      node_count:
-        plugin_id: node_count
-        weight: 2
-        label: hidden
-        formatter: default
-      node_post_date:
-        plugin_id: node_post_date
-        weight: 1
-        label: hidden
-        formatter: ds_post_date_date_only
-        ft:
-          id: minimal
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
   field_group:
     group_bp_meta:
       children:
@@ -83,10 +38,84 @@ third_party_settings:
         speed: fast
         id: ''
         classes: meta
-id: node.blog_post.full
+  ds:
+    layout:
+      id: ds_1col
+      path: modules/contrib/ds
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - group_bp_meta
+        - field_bp_segment
+        - field_bp_banner
+        - node_post_date
+        - register
+        - node_count
+        - addtoany
+    fields:
+      node_count:
+        plugin_id: node_count
+        weight: 2
+        label: hidden
+        formatter: default
+      register:
+        plugin_id: register
+        weight: 2
+        label: above
+        formatter: default
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw: true
+            lbw-el: h3
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 1
+        label: hidden
+        formatter: ds_post_date_date_only
+        ft:
+          id: minimal
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+id: node.blog_post.restricted_full_content
 targetEntityType: node
 bundle: blog_post
-mode: full
+mode: restricted_full_content
 content:
   addtoany:
     weight: 3
@@ -99,20 +128,6 @@ content:
     settings:
       image_style: ''
       image_link: ''
-    third_party_settings: {  }
-  field_bp_comments:
-    type: disqus_comment
-    weight: 4
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-  field_bp_paragraphs:
-    type: entity_reference_revisions_entity_view
-    weight: 2
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
     third_party_settings: {  }
   field_bp_segment:
     type: entity_reference_label
@@ -128,6 +143,8 @@ content:
             lb: ''
 hidden:
   field_bp_category: true
+  field_bp_comments: true
   field_bp_description: true
+  field_bp_paragraphs: true
   field_bp_show_in: true
   links: true

@@ -1,0 +1,10 @@
+uuid: 34b531b9-d675-40f6-825b-75d06cf9f69b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.restricted_full_content
+label: 'Restricted full content'
+targetEntityType: node
+cache: true

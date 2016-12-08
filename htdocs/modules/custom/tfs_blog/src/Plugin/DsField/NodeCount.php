@@ -14,7 +14,7 @@ use Drupal\ds\Plugin\DsField\DsFieldBase;
  *   id = "node_count",
  *   title = @Translation("Node count"),
  *   entity_type = "node",
- *   ui_limit = {"blog_post|teaser"}
+ *   ui_limit = {"blog_post|*"}
  * )
  */
 class NodeCount extends DsFieldBase {
