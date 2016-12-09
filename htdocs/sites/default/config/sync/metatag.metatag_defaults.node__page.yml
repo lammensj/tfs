@@ -6,4 +6,8 @@ id: node__page
 label: 'Content: Page'
 tags:
   description: '[node:field_page_description]'
+  title: '[node:title] | [site:name]'
   og_description: '[node:field_page_description]'
+  og_site_name: '[site:name]'
+  og_title: '[node:title] | [site:name]'
+  og_url: '[node:url]'

@@ -10,4 +10,8 @@ tags:
   canonical_url: '[site:url]'
   description: '[node:field_page_description]'
   shortlink: '[site:url]'
+  title: '[node:title] | [site:name]'
   og_description: '[node:field_page_description]'
+  og_site_name: '[site:name]'
+  og_title: '[node:title] | [site:name]'
+  og_url: '[node:url]'

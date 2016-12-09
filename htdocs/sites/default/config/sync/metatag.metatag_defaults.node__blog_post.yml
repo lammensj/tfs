@@ -1,0 +1,13 @@
+uuid: 599ad514-b83b-4218-8843-18f665e7ef2b
+langcode: en
+status: true
+dependencies: {  }
+id: node__blog_post
+label: 'Content: Blog post'
+tags:
+  description: '[node:field_bp_description]'
+  title: '[node:title] | [site:name]'
+  og_description: '[node:field_bp_description]'
+  og_site_name: '[site:name]'
+  og_title: '[node:title] | [site:name]'
+  og_url: '[node:url]'
