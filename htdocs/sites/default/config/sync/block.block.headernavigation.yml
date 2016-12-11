@@ -1,0 +1,30 @@
+uuid: a2c86598-1250-487c-9fbc-124f94756e6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.header-navigation
+  module:
+    - system
+    - tfs_mailchimp
+  theme:
+    - tfs_bootstrap_business
+id: headernavigation
+theme: tfs_bootstrap_business
+region: header_top_right
+weight: 0
+provider: null
+plugin: 'system_menu_block:header-navigation'
+settings:
+  id: 'system_menu_block:header-navigation'
+  label: 'Header navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  user_subscribed:
+    id: user_subscribed
+    user_subscribed_activate: '0'
+    negate: null
+    context_mapping: {  }
