@@ -58,6 +58,13 @@
 .region-content > .block-page-title-block {
     padding: 0;
 }
+.block-menu {
+    float: left;
+    clear: none;
+}
+.block-menu .menu {
+    margin: 0;
+}
 
 /* Testimonials */
 .view-testimonials .testimonials--item {

@@ -1,23 +1,23 @@
-uuid: a2c86598-1250-487c-9fbc-124f94756e6d
+uuid: 18d98b28-c7bc-4c5a-b7fe-da9fbe26b0a2
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.header-navigation
+    - system.menu.account
   module:
     - system
     - tfs_mailchimp
   theme:
     - tfs_bootstrap_business
-id: headernavigation
+id: useraccountmenu
 theme: tfs_bootstrap_business
 region: header_top_right
-weight: -9
+weight: -8
 provider: null
-plugin: 'system_menu_block:header-navigation'
+plugin: 'system_menu_block:account'
 settings:
-  id: 'system_menu_block:header-navigation'
-  label: 'Header navigation'
+  id: 'system_menu_block:account'
+  label: 'User account menu'
   provider: system
   label_display: '0'
   level: 1
