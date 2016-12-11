@@ -1,27 +1,24 @@
-uuid: 15262f2f-9712-40af-91cd-5883a38f3100
+uuid: a41ac5e0-0a38-4b09-b001-e95fbf6cd315
 langcode: en
 status: true
 dependencies:
   module:
+    - tfs_blog
     - tfs_mailchimp
     - user
   theme:
     - tfs_bootstrap_business
-_core:
-  default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
-id: tfs_bootstrap_business_local_tasks
+id: joincommunity
 theme: tfs_bootstrap_business
-region: content
-weight: -4
+region: navigation
+weight: -8
 provider: null
-plugin: local_tasks_block
+plugin: join_community
 settings:
-  id: local_tasks_block
-  label: Tabs
-  provider: core
+  id: join_community
+  label: 'Join community'
+  provider: tfs_blog
   label_display: '0'
-  primary: true
-  secondary: true
 visibility:
   user_subscribed:
     id: user_subscribed
@@ -31,8 +28,7 @@ visibility:
   user_role:
     id: user_role
     roles:
-      editor: editor
-      administrator: administrator
+      anonymous: anonymous
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'

@@ -22,7 +22,7 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /user/login
+    pages: "/user/login\r\n/user/register"
     negate: true
     context_mapping: {  }
   user_subscribed:

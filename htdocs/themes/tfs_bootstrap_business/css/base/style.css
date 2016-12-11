@@ -58,12 +58,28 @@
 .region-content > .block-page-title-block {
     padding: 0;
 }
-.block-menu {
-    float: left;
+ul.menu {
+    margin: 0;
+}
+
+/* Header */
+.region-header-top-right > .block-menu {
+    float: right;
     clear: none;
 }
-.block-menu .menu {
+.region-header-top-right > .block-menu .menu {
     margin: 0;
+}
+#main-navigation ul.menu > .menu-item:first-of-type a {
+    padding-left: 0;
+}
+#main-navigation .block-menu {
+    float: left;
+}
+#main-navigation #block-joincommunity {
+    float: right;
+    clear: none;
+    padding: 20px;
 }
 
 /* Testimonials */
