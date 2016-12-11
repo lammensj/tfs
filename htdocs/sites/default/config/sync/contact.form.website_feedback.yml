@@ -1,0 +1,12 @@
+uuid: 21bb7284-e8b9-4ff4-94ab-6e0f9984d3bd
+langcode: en
+status: true
+dependencies: {  }
+id: website_feedback
+label: Contact
+recipients:
+  - info@the-fashion-soc.be
+reply: ''
+weight: 0
+message: 'Your message has been sent. We will respond soon.'
+redirect: /

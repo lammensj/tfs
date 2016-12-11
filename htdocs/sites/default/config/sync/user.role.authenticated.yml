@@ -12,3 +12,4 @@ permissions:
   - 'access content'
   - 'view post access counter'
   - 'view disqus comments'
+  - 'access site-wide contact form'
