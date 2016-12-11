@@ -9,6 +9,7 @@ dependencies:
     - node.type.testimonial
   module:
     - ds
+    - field_group
     - image
     - text
     - user
@@ -31,41 +32,75 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
-        - field_testimonial_photo
         - field_testimonial_body
+        - group_testimonial_bottom
+        - field_testimonial_photo
         - node_title
     fields:
       node_title:
         plugin_id: node_title
-        weight: 2
+        weight: 3
         label: hidden
         formatter: default
         settings:
-          wrapper: h3
-          class: ''
+          wrapper: div
+          class: author
           link: false
         ft:
           id: reset
           settings:
             lb: ''
+  field_group:
+    group_testimonial_bottom:
+      children:
+        - field_testimonial_photo
+        - node_title
+      parent_name: ''
+      weight: 1
+      label: Bottom
+      format_type: html_element
+      format_settings:
+        label: Bottom
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: testimonial--bottom
 id: node.testimonial.full
 targetEntityType: node
 bundle: testimonial
 mode: full
 content:
   field_testimonial_body:
-    weight: 1
+    weight: 0
     label: hidden
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: minimal
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: text_default
   field_testimonial_photo:
-    weight: 0
+    weight: 2
     label: hidden
     settings:
       image_style: ''
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: minimal
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: image
 hidden:
   addtoany: true
