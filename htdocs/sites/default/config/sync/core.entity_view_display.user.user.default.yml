@@ -5,9 +5,11 @@ dependencies:
   config:
     - field.field.user.user.field_user_first_name
     - field.field.user.user.field_user_last_name
+    - field.field.user.user.field_user_mailchimp
     - field.field.user.user.field_user_subscribed
     - field.field.user.user.field_user_title
   module:
+    - mailchimp_lists
     - options
     - user
 id: user.user.default
@@ -29,6 +31,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_user_mailchimp:
+    weight: 10
+    label: above
+    settings:
+      show_interest_groups: false
+    third_party_settings: {  }
+    type: mailchimp_lists_subscribe_default
   field_user_subscribed:
     weight: 6
     label: above
