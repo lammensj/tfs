@@ -37,7 +37,7 @@ function tfs_mailchimp_form_mailchimp_signup_subscribe_block_signup_form_alter(&
   }
 
   $form['#validate'][] = 'tfs_mailchimp_signup_validate';
-  $form['#submit'][] = 'tfs_mailchimp_signup_submit';
+  array_unshift($form['#submit'], 'tfs_mailchimp_signup_submit');
 }
 
 /**
