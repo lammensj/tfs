@@ -25,7 +25,8 @@
         "merge-plugin": {
             "include": [
                 "core/composer.json",
-                "modules/contrib/disqus/composer.json"
+                "modules/contrib/disqus/composer.json",
+                "modules/contrib/swiftmailer/composer.json"
             ],
             "recurse": false,
             "replace": false,
