@@ -7,6 +7,7 @@ namespace Drupal\tfs_mailchimp\Plugin\Condition;
 use Drupal;
 use Drupal\Core\Condition\ConditionPluginBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\mailchimp_lists\Plugin\Field\FieldType\MailchimpListsSubscription;
 use Drupal\user\Entity\User;
 
 /**
@@ -64,7 +65,7 @@ class UserSubscribed extends ConditionPluginBase {
       if ($user->isAuthenticated()) {
         $user = User::load($user->id());
 
-        return !$user->get('field_user_subscribed')->value;
+        return (!$user->get('field_user_subscribed')->value) || !($user->get('field_user_mailchimp')->get(0) instanceof MailchimpListsSubscription);
       }
     }
 

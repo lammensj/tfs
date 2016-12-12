@@ -1,5 +1,6 @@
 <?php
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Markup;
 use Drupal\user\Entity\User;
 
 /**
@@ -27,10 +28,6 @@ function tfs_mailchimp_form_mailchimp_signup_subscribe_block_signup_form_alter(&
     else {
       $form['#access'] = FALSE;
     }
-    $form['create_account'] = [
-      '#type' => 'checkbox',
-      '#title' => t('Create account')
-    ];
   }
   else {
     $form['create_account'] = [
@@ -39,7 +36,21 @@ function tfs_mailchimp_form_mailchimp_signup_subscribe_block_signup_form_alter(&
     ];
   }
 
+  $form['#validate'][] = 'tfs_mailchimp_signup_validate';
   $form['#submit'][] = 'tfs_mailchimp_signup_submit';
+}
+
+/**
+ * Custom validator for mailchimp signup
+ *
+ * @param                    $form
+ * @param FormStateInterface $form_state
+ */
+function tfs_mailchimp_signup_validate($form, FormStateInterface $form_state) {
+  $merge_vars = $form_state->getValue('mergevars');
+  if ($form_state->getValue('create_account') && user_load_by_mail($merge_vars['EMAIL'])) {
+    $form_state->setErrorByName('mergevars[EMAIL]', t('This email address has already been taken. Please choose another one.'));
+  }
 }
 
 /**
@@ -82,5 +93,16 @@ function tfs_mailchimp_signup_submit($form, FormStateInterface $form_state) {
     _user_mail_notify('register_no_approval_required', $user);
     user_login_finalize($user);
     drupal_set_message(t('Registration successful. You are now logged in.'));
+  }
+}
+
+/**
+ * Implements hook_mail_alter().
+ */
+function tfs_mailchimp_mail_alter(&$message) {
+  if ($message['module'] == 'user') {
+    foreach ($message['body'] as &$body) {
+      $body = Markup::create(nl2br($body));
+    }
   }
 }
